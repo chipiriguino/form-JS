@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="”en”">
+  <head>
+    <meta charset="”UTF-8″" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Form Turistjobs</title>
+  </head>
+  <body>
+    <div class="text-pre-form">
+      <h1>Regístrate en unos pocos pasos:</h1>
+      <p>
+        Rellena los campos con la información necesaria para crear una cuenta en
+        nuestra web.
+      </p>
+    </div>
+    <form method="post" target="_blank" id="myForm" onsubmit="return validar()">
+      <label class="name-label">Nombre</label>
+      <div class="labels-align">
+        <input type="text" name="name" id="user" placeholder="Indica tu nombre" minlength="2" required pattern="[A-Za-z0-9]+"  required />
+      </div>
+      <label class="name-label">Apellidos</label>
+      <div class="labels-align">
+        <input type="text" name="lastname" id="lastname" placeholder="Indica tu apellido/s" minlength="2" required pattern="[A-Za-z0-9]+" required />
+      </div>
+      <label class="name-label">Contraseña</label>
+      <div class="labels-align">
+        <input type="password" name="password" id="pass1" placeholder="Indica tu contraseña" minlength="2" required pattern="[A-Za-z0-9]+" required /> 
+      </div>
+      <label class="name-label">E-mail</label>
+      <div class="labels-align">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Indica tu email"
+          required
+        />
+      </div>
+      <label class="name-label">Ciudad de nacimiento</label>
+      <div class="labels-align">
+        <select name="select">
+          <option disabled selected>Selecciona tu ciudad de nacimiento</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Barcelona">Barcelona</option>
+          <option value="Valencia">Valencia</option>
+          <option value="Sevilla">Sevilla</option>
+        </select>
+      </div>
+      <div class="align-button">
+        <label class="align-checkbox">
+          <input class="check-box" type="checkbox" name="checkbox" id="terminos" required>
+          <p> Acepto las Condiciones legales de la web a la que me registro</p>
+        </label>
+        <div>
+          <div>
+            <input
+            class="button" type="submit" value="REGISTRARME" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
